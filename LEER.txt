@@ -1,0 +1,24 @@
+** CREAR EV
+python -m venv venv
+
+
+** ACTIVAR EV
+venv\Scripts\activate
+
+
+** DEPENDENCIAS
+pip install -r requirements.txt
+
+
+** CREAR BD - SQLITE
+$env:FLASK_ENV = "development"
+              -> "type_config"
+flask --app 'flasky' db upgrade
+
+
+** EJECUTAR
+flask --app 'flasky' run
+
+
+
+Probado con: PY-3.12.2
